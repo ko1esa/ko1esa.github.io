@@ -1,0 +1,75 @@
+body{
+    font-family: 'Courier Prime', monospace;
+    font-weight: 400;
+}
+
+main{
+    flex-grow: 1;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.collection_name{
+    margin-bottom: 5px;
+}
+
+.gray_background{
+    background-color: rgb(237, 237, 237);
+}
+
+/* center */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.main_content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+    margin-top: 0px;
+    display: flex;
+    overflow-x:scroll;
+}
+
+
+
+/* cut gallery*/
+.box {
+    position:relative;
+    overflow:hidden;
+    min-width:80px;
+    width: 100px;
+    height:500px;
+    margin-right: 1px;
+    transition: min-width 0.5s;
+ }
+ .box img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:500px;
+    height:500px;
+    object-fit:cover;
+ }
+
+ .box:hover{
+    min-width: 500px;
+    height: 500px;
+ }
+ 
+
+ footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color: gray;
+
+}
