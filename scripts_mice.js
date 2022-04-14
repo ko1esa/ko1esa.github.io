@@ -12,3 +12,16 @@ document.getElementById("horizontal-scroller")
       event.preventDefault();
     }
   });
+
+const images = document.body.querySelectorAll('.box')
+const texts = document.body.querySelectorAll('.descr-content')
+
+images.forEach((image, index) => {
+image.addEventListener('mouseover', () => {
+texts[index].classList.add('shown')
+})
+
+image.addEventListener('mouseout', () => {
+texts[index].classList.remove('shown')
+})
+}) 
