@@ -2,7 +2,6 @@ body{
     font-family: 'Courier Prime', monospace;
     font-weight: 400;
 }
-
 main{
     flex-grow: 1;
 }
@@ -15,7 +14,9 @@ h1 {
     display: inline-block;
     background-color: red;
 }
-
+.sup_head{
+    background-color: rgb(237, 237, 237);
+}
 .main_head{
 
 }
@@ -24,9 +25,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-.gray_background{
-    background-color: rgb(237, 237, 237);
-}
+
 
 /* center */
 .container {
@@ -58,8 +57,8 @@ h1 {
     height:400px;
     margin-right: 1px;
     transition: min-width 0.5s;
- }
- .box img {
+}
+.box img {
     position: absolute;
     top:50%;
     left:50%;
@@ -67,18 +66,34 @@ h1 {
     width:400px;
     height:400px;
     object-fit:cover;
- }
+}
 
- .box:hover{
+.box:hover{
     min-width: 400px;
     height: 400px;
- }
- 
+}
 
- footer{
+.descr{
+    margin-top: 0px;
+}
+
+.descr-content{
+    display: none;
+    
+}
+.descr-content.shown { 
+    display: block;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+}
+.descr_traits{
+    width: 399px;
+}
+
+footer{
     display: flex;
     align-items: center;
     justify-content:space-between;
     color: gray;
-
 }
