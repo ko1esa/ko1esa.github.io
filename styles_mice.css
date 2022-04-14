@@ -6,21 +6,25 @@ main{
     flex-grow: 1;
 }
 
+
+.sup_head{
+    background-color: rgb(237, 237, 237);
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.main_head{
+    margin-bottom: 10px;
+}
 h1 {
     font-weight: 400;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .h1_stroke{
     display: inline-block;
     background-color: red;
 }
-.sup_head{
-    background-color: rgb(237, 237, 237);
-}
-.main_head{
-
-}
-
 .collection_name{
     margin-bottom: 5px;
 }
@@ -96,4 +100,12 @@ footer{
     align-items: center;
     justify-content:space-between;
     color: gray;
+}
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+a:hover{
+    border-bottom: 1px solid black;
 }
